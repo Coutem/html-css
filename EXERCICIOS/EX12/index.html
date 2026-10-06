@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com vídeos</title>
+</head>
+<body>
+    <!-- Formatos de vídeo (MP4/M4V, WEBM, OGV) -->
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu servidor.</p>
+    <!-- Diferentes navegadores são compatíveis com diferentes formatos. Ex: OGV não é compatível com Safari. Formatos mais utilizados são MP4 e WEBM -->
+
+    <video controls width="200" poster="imagens/image.jpg" loop>
+        <source src="midia/agua-720.mp4" type="video/mp4">
+        <source src="midia/agua-720-.webm" type="video/webm">
+        <source src="midia/agua.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com os vídeos</p>
+    </video>
+
+    <h1>Vídeos hospedados externamente</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=XXjw-PlhD2hfdCCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
